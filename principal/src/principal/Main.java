@@ -9,6 +9,7 @@ import java.util.Scanner;
 import Ejercicio1.Alumno;
 import Ejercicio2.Consulta;
 import Ejercicio3.Registro;
+import Ejercicio4.Convertidor;
 /**
  *
  * @author cass4
@@ -51,6 +52,14 @@ public class Main {
                     registro1.ingresarEdad();
                     registro1.hallarCategoria();
                     registro1.toString();
+                    break;
+                case 4:
+                    Convertidor convertir=new Convertidor();
+                    convertir.pedirSegundos();
+                    convertir.semanas();
+                    convertir.dias();
+                    convertir.horas();
+                    convertir.minutos();
                     break;
                 default:
                     System.out.println("OPCION INVALIDA");
