@@ -60,6 +60,7 @@ public class Main {
                     convertir.dias();
                     convertir.horas();
                     convertir.minutos();
+                    convertir.toString();
                     break;
                 default:
                     System.out.println("OPCION INVALIDA");
