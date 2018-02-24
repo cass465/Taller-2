@@ -8,6 +8,7 @@ package principal;
 import java.util.Scanner;
 import Ejercicio1.Alumno;
 import Ejercicio2.Consulta;
+import Ejercicio3.Registro;
 /**
  *
  * @author cass4
@@ -44,7 +45,13 @@ public class Main {
                     consulta1.numConsulta();
                     consulta1.consulta();
                     consulta1.toString();
-                    break;    
+                    break;  
+                case 3:
+                    Registro registro1=new Registro();
+                    registro1.ingresarEdad();
+                    registro1.hallarCategoria();
+                    registro1.toString();
+                    break;
                 default:
                     System.out.println("OPCION INVALIDA");
             }
