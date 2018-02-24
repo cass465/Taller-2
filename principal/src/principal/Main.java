@@ -7,6 +7,7 @@ package principal;
 
 import java.util.Scanner;
 import Ejercicio1.Alumno;
+import Ejercicio2.Consulta;
 /**
  *
  * @author cass4
@@ -38,6 +39,12 @@ public class Main {
                     alumno1.calcularPromedio();
                     alumno1.toString();
                     break;
+                case 2:
+                    Consulta consulta1=new Consulta();
+                    consulta1.numConsulta();
+                    consulta1.consulta();
+                    consulta1.toString();
+                    break;    
                 default:
                     System.out.println("OPCION INVALIDA");
             }
