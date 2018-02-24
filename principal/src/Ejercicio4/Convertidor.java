@@ -13,42 +13,52 @@ import java.util.Scanner;
  */
 public class Convertidor {
     private int segundos;
- private double semana;
- private double dias;
- private double horas;
- private double minutos;
- 
- 
- /**
-  * 
-  */
-   
- public void pedirSegundos(){
-      System.out.println("Digite la cantidad de veces que quiere consultar la estacion del año");
-      Scanner leer= new Scanner (System.in) ;       
-     segundos=leer.nextInt();
-     
- }
- /**
-  * halla la cantidad de semanas
-  */
- public void semanas(){
-    semana=segundos/604800;
-    System.out.println("semanas: "+(int)semana);
- }
-public void dias(){
-   dias=((semana-(int)semana)*604800)/86400;
-   System.out.println("dias: "+(int)dias);
-}
-
-public void horas(){
-  horas=((dias-(int)dias)*86400)/3600;
-  System.out.println("horas: "+(int)horas);
-  
-}
-public void minutos(){
-  minutos=((horas-(int)dias)*3600)/60;
-  System.out.println("minutos: "+(int)minutos);
+    private int semanas=0;
+    private int dias=0;
+    private int horas=0;
+    private int minutos=0;
+    /**
+    * ingresar el numero de segundos 
+    */
+    public void pedirSegundos(){
+        System.out.println("INGRESE EL NUMERO DE SEGUNDOS");
+        Scanner leer= new Scanner (System.in) ;       
+        segundos=leer.nextInt(); 
+        while(segundos<0){
+            System.out.println("NUMERO DE SEGUNDOS INVALIDO");
+            segundos=leer.nextInt(); 
+        }
+    }
+    /**
+     * hallar la cantidad de semanas
+     */
+    public void calcularSemanas(){
+        if(segundos>=604800){
+            semanas=segundos/604800;
+            segundos-=(semanas*604800);
+        }
+        System.out.println("semanas: "+semanas);
+    }
+    public void calcularDias(){
+        if(segundos>=86400){
+            dias=segundos/86400;
+            segundos-=(dias*86400);
+        }
+        System.out.println("dias: "+dias);
+    }
+    public void calcularHoras(){
+        if(segundos>=3600){
+            horas=segundos/3600;
+            segundos-=(horas*3600);
+        }
+        System.out.println("horas: "+horas);
+    }
+    public void calcularMinutos(){
+        if(segundos>=60){
+            minutos=segundos/60;
+            segundos-=(minutos*60);
+        }
+        System.out.println("minutos: "+minutos);
   
 }
  @Override

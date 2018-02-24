@@ -10,6 +10,7 @@ import Ejercicio1.Alumno;
 import Ejercicio2.Consulta;
 import Ejercicio3.Registro;
 import Ejercicio4.Convertidor;
+import Ejercicio5.Fibonacci;
 /**
  *
  * @author cass4
@@ -54,13 +55,20 @@ public class Main {
                     registro1.toString();
                     break;
                 case 4:
-                    Convertidor convertir=new Convertidor();
-                    convertir.pedirSegundos();
-                    convertir.semanas();
-                    convertir.dias();
-                    convertir.horas();
-                    convertir.minutos();
-                    convertir.toString();
+                    Convertidor convertidor1=new Convertidor();
+                    convertidor1.pedirSegundos();
+                    convertidor1.calcularSemanas();
+                    convertidor1.calcularDias();
+                    convertidor1.calcularHoras();
+                    convertidor1.calcularMinutos();
+                    break;
+                case 5:
+                    Fibonacci f1 = new Fibonacci();
+                    f1.ingresarNumero();
+                    f1.imprimirSerie();
+                    break;
+                case 0:
+                    System.out.println("EL PROGRAMA HA FINALIZADO");
                     break;
                 default:
                     System.out.println("OPCION INVALIDA");

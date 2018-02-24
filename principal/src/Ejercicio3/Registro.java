@@ -37,7 +37,7 @@ public class Registro {
             categoria="INFANTIL";
         }
         if(edad>=18 && edad<=25){
-            categoria="JUVANIL";
+            categoria="JUVENIL";
         }
         if(edad>=26 && edad<=45){
             categoria="MAYORES";
