@@ -63,7 +63,7 @@ public class Convertidor {
 }
  @Override
   public String toString(){
-      return "segundo:"+segundos+"semana: "+semana+" dias: "+dias+" horas: "+horas+" minutos"+minutos;
+      return "segundo:"+segundos+"semana: "+semanas+" dias: "+dias+" horas: "+horas+" minutos"+minutos;
       
   }
 

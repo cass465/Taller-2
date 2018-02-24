@@ -23,7 +23,7 @@ public class Main {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner leer=new Scanner(System.in);
-        int opcion=0;
+        int opcion;
         do{
             System.out.println("INGRESE UNA OPCION");
             System.out.println("1. EJERCICIO 1");
@@ -45,7 +45,7 @@ public class Main {
                 case 2:
                     Consulta consulta1=new Consulta();
                     consulta1.numConsulta();
-                    consulta1.consulta();
+                    consulta1.determinarEstacion();
                     consulta1.toString();
                     break;  
                 case 3:
